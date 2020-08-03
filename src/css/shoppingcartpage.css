@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    height: 28px;
+    background-color: #f6f6f6;
+}
+
+.nav0 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 28px;
+}
+
+.top-nav-tool {
+    float: right;
+    line-height: 28px;
+    position: relative;
+    z-index: 900;
+    display: block;
+}
+
+.top-nav-tool li {
+    font-size: 12px;
+    float: left;
+    color: #666;
+}
+
+.yg-card span {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.yg-card span a {
+    color: #666;
+}
+
+.yg-card span a:hover {
+    color: #f70800;
+}
+
+.article1 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.article1 a {
+    margin-right: 82px;
+    display: block;
+    float: left;
+    width: 206px;
+    height: 75px;
+}
+
+.article1 .box1 {
+    width: 420px;
+    height: 36px;
+    position: relative;
+}
+
+.article1 .box1 .input1 {
+    padding-left: 10px;
+    outline: none;
+    float: left;
+    display: block;
+    width: 300px;
+    height: 32px;
+    border: 2px red solid;
+}
+
+.article1 .box1 .but1 {
+    outline: none;
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 36px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.article1 .box2 {
+    position: absolute;
+    right: 0;
+}
+
+.boxtop {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    /* background-color: violet; */
+    position: relative;
+}
+
+.boxtop span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.article2 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.article2 span {
+    position: absolute;
+    font-size: 14px;
+}
+
+.article2 .input1 {
+    position: absolute;
+    left: 20px;
+}
+
+.article2 .span1 {
+    left: 44px;
+}
+
+.article2 .span2 {
+    left: 150px;
+}
+
+.article2 .span3 {
+    left: 550px;
+}
+
+.article2 .span4 {
+    left: 666px;
+}
+
+.article2 .span5 {
+    left: 810px;
+}
+
+.article2 .span6 {
+    left: 900px;
+}
+
+.article3 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.article3 .box0 {
+    width: 1000px;
+    height: 200px;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.article3 .box0 .spanleft {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    background-color: #ff4200;
+    color: white;
+    border-radius: 2px;
+}
+
+.article3 .box0 .spanright {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 90px;
+    background-color: #00bfcf;
+    color: white;
+    border-radius: 2px;
+}
+
+.article3 .box0 .box1 {
+    width: 1000px;
+    height: 150px;
+    background-color: #fff4e8;
+    position: relative;
+}
+
+.article3 .box0 .box1 .input1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.article3 .box0 .box1 img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 67px;
+    top: 23px;
+}
+
+.article3 .box0 .box1 p {
+    width: 339px;
+    position: absolute;
+    left: 180px;
+    top: 43px;
+    font-size: 13px;
+}
+
+.article3 .box0 .box1 .span1 {
+    font-size: 14px;
+    position: absolute;
+    left: 540px;
+    top: 50px;
+}
+
+.article3 .box0 .box1 .left {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    position: absolute;
+    left: 640px;
+    top: 50px;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.article3 .box0 .box1 .center {
+    width: 50px;
+    background-color: white;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    left: 661px;
+    top: 50px;
+    border: 1px solid black;
+}
+
+.article3 .box0 .box1 .right {
+    width: 20px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    left: 712px;
+    top: 50px;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.article3 .box0 .box1 .span2 {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    left: 774px;
+    top: 50px;
+}
+
+.article3 .box0 .box1 .abottom {
+    position: absolute;
+    left: 897px;
+    top: 53px;
+}
+
+.article4 {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 998px;
+    height: 48px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    color: #666;
+}
+
+.article4 .input1 {
+    position: absolute;
+    left: 20px;
+}
+
+.article4 .span1 {
+    left: 44px;
+    position: absolute;
+    font-size: 14px;
+}
+
+.article4 .a1 {
+    position: absolute;
+    left: 87px;
+    color: #666;
+    font-size: 14px;
+}
+
+.article4 .span2 {
+    position: absolute;
+    left: 600px;
+}
+
+.article4 .span3 {
+    padding: 2px;
+    color: red;
+}
+
+.article4 .span4 {
+    position: absolute;
+    left: 750px;
+}
+
+.article4 .span5 {
+    position: absolute;
+    left: 788px;
+    color: red;
+    font-size: 20px;
+}
+
+.article4 .a2 {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    right: -1px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 470px;
+    /* background-color: red; */
+    position: relative;
+}
+
+footer .boxfooter {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    /* top: 50px; */
+    /* background-color: sandybrown; */
+}
+
+footer .boxfooter .boxfooterli {
+    width: 1000px;
+    height: 470px;
+    position: absolute;
+    top: 0px;
+    /* background-color: sienna; */
+}
+
+footer .boxfooter .boxfooterli .box1 {
+    width: 1000px;
+    height: 102px;
+}
+
+footer .boxfooter .boxfooterli .box2 {
+    width: 1000px;
+    height: 167px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul {
+    height: 114px;
+    width: 760px;
+    position: relative;
+    /* background-color: thistle; */
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: 114px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 0;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 120px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 240px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 360px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright {
+    position: absolute;
+    right: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img1 {
+    position: absolute;
+    left: -260px;
+    top: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img2 {
+    position: absolute;
+    left: -140px;
+    top: 30px;
+}
+
+footer .boxfooter .boxfooterli .box3 {
+    width: 1000px;
+    height: 177px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: springgreen; */
+}
+
+footer .boxfooter .boxfooterli .box3 ul {
+    position: absolute;
+    top: 20px;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li {
+    float: left;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #555;
+    border-right: 1px solid #555;
+}
+
+footer .boxfooter .boxfooterli .box3 ul .li12 {
+    border: none;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li a {
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 span {
+    height: 26px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 .span1 {
+    position: absolute;
+    top: 46px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span2 {
+    position: absolute;
+    top: 71px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span3 {
+    position: absolute;
+    top: 97px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span4 {
+    position: absolute;
+    top: 120px;
+}

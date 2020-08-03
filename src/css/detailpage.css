@@ -1,0 +1,807 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    height: 28px;
+    background-color: #f6f6f6;
+}
+
+.nav0 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 28px;
+}
+
+.top-nav-tool {
+    float: right;
+    line-height: 28px;
+    position: relative;
+    z-index: 900;
+    display: block;
+}
+
+.top-nav-tool li {
+    font-size: 12px;
+    float: left;
+    color: #666;
+}
+
+.yg-card span {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.yg-card span a {
+    color: #666;
+}
+
+.yg-card span a:hover {
+    color: #f70800;
+}
+
+.article1 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.article1 a {
+    margin-right: 82px;
+    display: block;
+    float: left;
+    width: 206px;
+    height: 75px;
+}
+
+.article1 .box1 {
+    width: 420px;
+    height: 36px;
+    position: relative;
+}
+
+.article1 .box1 .input1 {
+    padding-left: 10px;
+    outline: none;
+    float: left;
+    display: block;
+    width: 300px;
+    height: 32px;
+    border: 2px red solid;
+}
+
+.article1 .box1 .but1 {
+    outline: none;
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 36px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.article1 .box2 {
+    position: absolute;
+    right: 0;
+}
+
+.article2 {
+    background-color: #f70800;
+    height: 40px;
+}
+
+.article2 .box1 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.ul1 {
+    padding-right: 134px;
+    position: relative;
+    height: 40px;
+    z-index: 888;
+    width: 1000px;
+}
+
+.ul1 li {
+    display: block;
+    float: left;
+    height: 40px;
+}
+
+.ul1 .li1 {
+    background-color: #bc0600;
+}
+
+.ul1 li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.ul1 li a:hover {
+    background-color: #e20700;
+}
+
+.ul1 .navcat {
+    width: 134px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* float: right; */
+    /* height: 134px; */
+}
+
+.ul1 .navcat a {
+    display: block;
+    width: 134px;
+    height: 100%;
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* .ul1 .navcat a:hover{
+
+} */
+
+.article2 .box1 .ul1 .box2 {
+    width: 1000px;
+    height: 296px;
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    background-color: white;
+    z-index: 10000;
+    border: 1px solid red;
+    display: none;
+}
+
+.article2 .box1 .ul1 .box2 .box0 {
+    width: 166px;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #f6f6f6;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.article2 .box1 .ul1 .box2 .box66 {
+    width: 165px;
+    border: none;
+}
+
+.article2 .box1 .ul1 .box2 .box0 .box111 {
+    display: block;
+    width: 135px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f6f6f6;
+    margin-left: 16px;
+}
+
+.article2 .box1 .ul1 .box2 .box0 .box111 a {
+    color: #222;
+}
+
+.article2 .box1 .ul1 .box2 .box0 .box111 a:hover {
+    color: blue;
+}
+
+.article2 .box1 .ul1 .box2 .box0 ul {
+    width: 135px;
+    height: auto;
+    margin-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 17px;
+}
+
+.article2 .box1 .ul1 .box2 .box0 ul li {
+    text-align: center;
+    width: 135px;
+    height: 24px;
+}
+
+.article2 .box1 .ul1 .box2 .box0 ul li a {
+    /* z-index: 100; */
+    /* cursor: pointer; */
+    /* width: 135px; */
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    color: #555;
+}
+
+.article2 .box1 .ul1 .box2 .box0 ul li a:hover {
+    color: red;
+    background-color: white;
+}
+
+.xian {
+    width: 1000px;
+    height: 56px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    /* background-color: #ccc; */
+    /* position: absolute;
+    top: 100px; */
+    position: relative;
+}
+
+.xian a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    bottom: -51px;
+    border-radius: 5px;
+    right: 0px;
+}
+
+.article3 {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    height: 555px;
+    /* background-color: turquoise; */
+}
+
+.article3 .boxglass {
+    width: 1000px;
+    height: 511px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    /* background-color: wheat; */
+}
+
+.article3 .boxglass .boxleft {
+    width: 400px;
+    height: 511px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-color: violet; */
+}
+
+.article3 .boxglass .boxleft .spicwai {
+    width: 398px;
+    height: 398px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #EDEDED;
+}
+
+.article3 .boxglass .boxleft .spicwai .spic {
+    width: 398px;
+    height: 398px;
+    position: relative;
+}
+
+.article3 .boxglass .boxleft .spicwai .spic img {
+    width: 398px;
+    height: 398px;
+}
+
+.article3 .boxglass .boxleft .spicwai .spic .sf {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.article3 .boxglass .boxleft .boxbottom {
+    width: 390px;
+    height: 60px;
+    position: absolute;
+    top: 415px;
+    left: 5px;
+    /* background-color: #EDEDED; */
+}
+
+.article3 .boxglass .boxleft .boxbottom .boxitem {
+    width: 350px;
+    height: 60px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    /* position: relative; */
+    left: 25px;
+}
+
+.article3 .boxglass .boxleft .boxbottom .boxitem ul {
+    width: 99999px;
+    position: absolute;
+}
+
+.article3 .boxglass .boxleft .boxbottom .boxitem ul li {
+    /* display: none; */
+    border: 1px solid #ededed;
+    float: left;
+    width: 58px;
+    height: 58px;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.article3 .boxglass .boxleft .boxbottom .aleft {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    width: 25px;
+    height: 0px;
+    background-color: #f70800;
+}
+
+.article3 .boxglass .boxleft .boxbottom .aright {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    width: 15px;
+    height: 0px;
+    background-color: #f70800;
+    float: right;
+}
+
+.article3 .boxglass .boxleft .artno {
+    width: 400px;
+    height: 16px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 0;
+    top: 490px;
+    font-size: 12px;
+    color: #adadad;
+}
+
+.article3 .boxglass .boxleft .artno a {
+    color: #222;
+}
+
+.article3 .boxglass .boxleft .artno .a1 {
+    margin-right: 20px;
+    float: right;
+}
+
+.article3 .boxglass .boxleft .artno .a2 {
+    float: right;
+}
+
+.article3 .boxglass .boxright {
+    width: 570px;
+    height: 360px;
+    position: absolute;
+    left: 430px;
+    top: 0;
+    /* background-color: yellow; */
+}
+
+.article3 .boxglass .boxright .box1 {
+    width: 570px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.article3 .boxglass .boxright .box1 a {
+    color: #666;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.article3 .boxglass .boxright h1 {
+    position: relative;
+    left: 0;
+    top: 33px;
+    width: 420px;
+    color: #222;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.article3 .boxglass .boxright .box3 {
+    width: 570;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    font-size: 12px;
+    color: #666;
+}
+
+.article3 .boxglass .boxright .box4top {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 568px;
+    height: 98px;
+    border: 1px dotted #e8e8e8;
+    background-color: #fafafa;
+}
+
+.article3 .boxglass .boxright .box4top .box4_num {
+    width: 200px;
+    height: 33px;
+    /* background-color: tomato; */
+    position: absolute;
+    right: 0;
+    top: 99px;
+}
+
+.article3 .boxglass .boxright .box4top .box4_num span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    font-size: 20px;
+}
+
+.article3 .boxglass .boxright .box4top .box4_num .box4_input {
+    position: absolute;
+    outline: none;
+    font-size: 22px;
+    border: 1px solid black;
+    top: 0;
+    left: 87px;
+    width: 40px;
+    /* border: none; */
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.article3 .boxglass .boxright .box4top .box4_num button {
+    width: 67px;
+    outline: none;
+    height: 33px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.article3 .boxglass .boxright .box4top .box4top2 {
+    width: 548px;
+    height: 23px;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+
+.article3 .boxglass .boxright .box4top .box4top1 {
+    width: 548px;
+    height: 45px;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    line-height: 45px;
+}
+
+.article3 .boxglass .boxright .box4top .box4top1 .span2 {
+    font-size: 24px;
+    color: #f70800;
+}
+
+.article3 .boxglass .boxright .box4top .box4top1 .span3 {
+    color: #f70800;
+    font-size: 34px;
+    /* margin-right: 7px; */
+}
+
+.article3 .boxglass .boxright .box4top .box4top2 .span2 {
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+    background-color: #ff504a;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 8px;
+}
+
+.article3 .boxglass .boxright .box4 {
+    width: 570px;
+    height: 31px;
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.article3 .boxglass .boxright .box5 {
+    width: 570px;
+    height: 124px;
+    position: absolute;
+    left: 0;
+    top: 250px;
+    /* background-color: blue; */
+}
+
+.article3 .boxglass .boxright .box5 .box55 {
+    width: 300px;
+    height: 114px;
+    border: 5px solid #f6f6f6;
+}
+
+.article3 .boxglass .boxright .box5 .box55 img {
+    width: 300px;
+    height: 114px;
+}
+
+footer {
+    width: 100%;
+    height: 470px;
+    /* background-color: red; */
+    position: relative;
+}
+
+footer .boxfooter {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    /* top: 50px; */
+    /* background-color: sandybrown; */
+}
+
+footer .boxfooter .boxfooterli {
+    width: 1000px;
+    height: 470px;
+    position: absolute;
+    top: 0px;
+    /* background-color: sienna; */
+}
+
+footer .boxfooter .boxfooterli .box1 {
+    width: 1000px;
+    height: 102px;
+}
+
+footer .boxfooter .boxfooterli .box2 {
+    width: 1000px;
+    height: 167px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul {
+    height: 114px;
+    width: 760px;
+    position: relative;
+    /* background-color: thistle; */
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: 114px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 0;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 120px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 240px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 360px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright {
+    position: absolute;
+    right: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img1 {
+    position: absolute;
+    left: -260px;
+    top: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img2 {
+    position: absolute;
+    left: -140px;
+    top: 30px;
+}
+
+footer .boxfooter .boxfooterli .box3 {
+    width: 1000px;
+    height: 177px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: springgreen; */
+}
+
+footer .boxfooter .boxfooterli .box3 ul {
+    position: absolute;
+    top: 20px;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li {
+    float: left;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #555;
+    border-right: 1px solid #555;
+}
+
+footer .boxfooter .boxfooterli .box3 ul .li12 {
+    border: none;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li a {
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 span {
+    height: 26px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 .span1 {
+    position: absolute;
+    top: 46px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span2 {
+    position: absolute;
+    top: 71px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span3 {
+    position: absolute;
+    top: 97px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span4 {
+    position: absolute;
+    top: 120px;
+}

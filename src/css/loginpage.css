@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    height: 29px;
+    background-color: #f6f6f6;
+}
+
+.nav0 {
+    height: 29px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav0 span {
+    display: block;
+    float: right;
+    width: 74px;
+    height: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav0 span a {
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.img1 {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    margin: 0 0 0 -628px;
+}
+
+.box1 {
+    position: relative;
+    width: 968px;
+    height: 112px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.box1 .box2 {
+    width: 353px;
+    height: 57px;
+}
+
+.box1 .box2 a {
+    float: left;
+    display: block;
+    width: 185px;
+    height: 50px;
+    background: url(https://www.ugoshop.com/themes/ugo/images/2015/2015_public/logo.png) 0 0 no-repeat;
+}
+
+.box1 .box2 span {
+    float: left;
+    display: block;
+    width: 167px;
+    height: 50px;
+    border-left: 1px solid #f6f6f6;
+}
+
+.article1 {
+    position: relative;
+    width: 968px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.article1 .box11 {
+    width: 255px;
+    height: 42px;
+    background-color: orange;
+    border-radius: 2px 2px 0 0;
+}
+
+.article1 .box11 .span11 {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 42px;
+}
+
+.article1 .span22 em {
+    color: red;
+}
+
+.article1 .span22 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 12px;
+}
+
+.article1 .span22 a {
+    font-size: 12px;
+}
+
+.article2 {
+    position: relative;
+    margin: 0 auto;
+    width: 964px;
+    height: 438px;
+    border: 2px solid orange;
+}
+
+.article2 .boxwai {
+    width: 665px;
+    position: relative;
+}
+
+.article2 .boxwai form {
+    width: 532px;
+    height: 344.4px;
+    position: absolute;
+    top: 62px;
+    left: 133px;
+    /* background-color: chartreuse; */
+}
+
+.article2 .boxwai form .box1 {
+    width: 351px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.article2 .boxwai form .box1 .box11 {
+    color: #666666;
+    width: 351px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 23px;
+}
+
+.article2 .boxwai form .box1 .box11 input {
+    display: block;
+    /* font: 13px Arial; */
+    font-size: 13px;
+    color: #222;
+    width: 315px;
+    padding: 5px 25px 5px 10px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #a2a2a2;
+    outline: none;
+}
+
+.article2 .boxwai form .box1 .box1bottom {
+    height: 20px;
+    width: 340px;
+    padding-left: 10px;
+    line-height: 20px;
+    border: 1px solid #ffadb0;
+    background-color: #fff3f3;
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    top: 60px;
+    display: none;
+    z-index: 20;
+}
+
+.article2 .boxwai form .box1 span {
+    display: block;
+    position: absolute;
+    width: 351px;
+    height: 12px;
+    /* padding-bottom: 7px; */
+    font-size: 12px;
+    top: 0;
+    left: 0;
+}
+
+.article2 .boxwai form .box2 {
+    width: 351px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+
+.article2 .boxwai form .box2 .box11 {
+    color: #666666;
+    width: 351px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 23px;
+}
+
+.article2 .boxwai form .box2 .box11 input {
+    display: block;
+    /* font: 13px Arial; */
+    font-size: 13px;
+    color: #222;
+    width: 315px;
+    padding: 5px 25px 5px 10px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #a2a2a2;
+    outline: none;
+}
+
+.article2 .boxwai form .box2 .box1bottom {
+    height: 20px;
+    width: 340px;
+    padding-left: 10px;
+    line-height: 20px;
+    border: 1px solid #ffadb0;
+    background-color: #fff3f3;
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    z-index: 20;
+    display: none;
+    top: 60px;
+}
+
+.article2 .boxwai form .box4 {
+    width: 532px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 185px;
+}
+
+.article2 .boxwai form .box4 input {
+    width: 351px;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+}
+
+.article2 .boxwai form .box5 {
+    width: 351px;
+    position: absolute;
+    left: 0;
+    top: 245px;
+}
+
+.article2 .boxwai form .box5 p {
+    color: #666;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.article2 .boxwai form .box5 span {
+    color: #888;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.article2 .boxwai form .box3 {
+    position: absolute;
+    width: 351px;
+    height: 31px;
+    left: 0;
+    top: 133px;
+}
+
+.article2 .boxwai form .box3 label {
+    font-size: 12px;
+    position: absolute;
+    left: 18px;
+    top: 2px;
+}
+
+.article2 .boxwai form .box3 a {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+.article2 .boxwai form .box2 span {
+    display: block;
+    position: absolute;
+    width: 351px;
+    height: 12px;
+    /* padding-bottom: 7px; */
+    font-size: 12px;
+    top: 0;
+    left: 0;
+}
+
+.article2 .boxright {
+    width: 299px;
+    height: 438px;
+    position: absolute;
+    right: 0;
+    background-color: #fff6ec;
+}
+
+.article2 .boxright .boxbottom {
+    position: absolute;
+    width: 219px;
+    left: 82px;
+    top: 58px;
+}
+
+.article2 .boxright .boxbottom .box1 {
+    width: 219px;
+    height: 57px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.article2 .boxright .boxbottom .box2 {
+    width: 219px;
+    height: 57px;
+    position: absolute;
+    top: 99px;
+    right: 0;
+}
+
+.article2 .boxright .boxbottom .box1 .span1 {
+    display: block;
+    width: 140px;
+    font-size: 14px;
+    color: #555555;
+    position: absolute;
+}
+
+.article2 .boxright .boxbottom .box2 .span2 {
+    display: block;
+    width: 140px;
+    font-size: 14px;
+    color: #555555;
+    position: absolute;
+    top: 10px;
+}
+
+.article2 .boxright .boxbottom .box1 .a1 {
+    display: block;
+    top: 50px;
+    width: 140px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    color: #ff6000;
+    position: absolute;
+    border: 1px solid red;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: white;
+    /* margin-top: 10px; */
+}
+
+.article2 .boxright .boxbottom .box2 .a2 {
+    display: block;
+    border-radius: 2px;
+    background-color: white;
+    width: 142px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #ff6000;
+    border: 1px solid red;
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    /* margin-top: 10px; */
+}
+
+footer {
+    width: 100%;
+    height: 470px;
+    /* background-color: red; */
+    position: relative;
+}
+
+footer .boxfooter {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    /* top: 50px; */
+    /* background-color: sandybrown; */
+}
+
+footer .boxfooter .boxfooterli {
+    width: 1000px;
+    height: 470px;
+    position: absolute;
+    top: 0px;
+    /* background-color: sienna; */
+}
+
+footer .boxfooter .boxfooterli .box1 {
+    width: 1000px;
+    height: 102px;
+}
+
+footer .boxfooter .boxfooterli .box2 {
+    width: 1000px;
+    height: 167px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul {
+    height: 114px;
+    width: 760px;
+    position: relative;
+    /* background-color: thistle; */
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: 114px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 0;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfirst ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 120px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ullefttwo ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 240px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftthree ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: absolute;
+    left: 360px;
+    height: 114px;
+    border-right: 1px solid #f2f2f2;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul {
+    font-size: 12px;
+    color: #666;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul .li1 {
+    font-size: 16px;
+    color: #333;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulleft .box2ulleftfour ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright {
+    position: absolute;
+    right: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img1 {
+    position: absolute;
+    left: 360px;
+    top: 0;
+}
+
+footer .boxfooter .boxfooterli .box2 .box2ul .box2ulright .img2 {
+    position: absolute;
+    left: -140px;
+    top: 30px;
+}
+
+footer .boxfooter .boxfooterli .box3 {
+    width: 1000px;
+    height: 177px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: springgreen; */
+}
+
+footer .boxfooter .boxfooterli .box3 ul {
+    position: absolute;
+    top: 20px;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li {
+    float: left;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #555;
+    border-right: 1px solid #555;
+}
+
+footer .boxfooter .boxfooterli .box3 ul .li12 {
+    border: none;
+}
+
+footer .boxfooter .boxfooterli .box3 ul li a {
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 span {
+    height: 26px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #555;
+}
+
+footer .boxfooter .boxfooterli .box3 .span1 {
+    position: absolute;
+    top: 46px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span2 {
+    position: absolute;
+    top: 71px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span3 {
+    position: absolute;
+    top: 97px;
+}
+
+footer .boxfooter .boxfooterli .box3 .span4 {
+    position: absolute;
+    top: 120px;
+}
