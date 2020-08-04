@@ -39,4 +39,6 @@ $d1->arr2 = $list ;
 
 echo json_encode($d1);
 
+//http://localhost/ugoshop/php/doem.php
+
 
