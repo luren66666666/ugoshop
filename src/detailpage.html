@@ -318,28 +318,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.querySelector('.ul1 .navcat a').onmouseover = function() {
-            document.querySelector('.article2 .box1 .ul1 .box2').style.display = 'block';
-        }
-        document.querySelector('.ul1 .navcat a').onmouseout = function() {
-            document.querySelector('.article2 .box1 .ul1 .box2').style.display = 'none';
-        }
-        document.querySelector('.article2 .box1 .ul1 .box2').onmousemove = function() {
-            document.querySelector('.article2 .box1 .ul1 .box2').style.display = 'block';
-        }
-        document.querySelector('.article2 .box1 .ul1 .box2').onmouseout = function() {
-            document.querySelector('.article2 .box1 .ul1 .box2').style.display = 'none';
-        }
-        document.querySelector('.article1 .box1 form .input1').onfocus = function() {
-            document.querySelector('.article1 .box1 form .input1').setAttribute('placeholder', '');
-        }
-        document.querySelector('.article1 .box1 form .input1').onblur = function() {
-            if (document.querySelector('.article1 .box1 form .input1').value === '') {
-                document.querySelector('.article1 .box1 form .input1').setAttribute('placeholder', '请输入商品名称或货号');
-            }
-        }
-    </script>
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="detailpage"></script>
+    <!-- http://localhost/ugoshop/src/detailpage.html -->
 </body>
 
 </html>
