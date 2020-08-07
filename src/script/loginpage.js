@@ -38,7 +38,7 @@ define([], function() {
                         //如果手机号和密码都已填写，则传给后端，判断是否正确
                         if (this.inputtel.val() && this.inputpassword.val()) {
                             $.ajax({
-                                url: 'http://localhost/ugoshop/php/verify.php',
+                                url: 'http://10.31.163.32/ugoshop/php/verify.php',
                                 data: {
                                     tel: this.inputtel.val(),
                                     password: this.inputpassword.val(),
@@ -52,7 +52,7 @@ define([], function() {
                                     // console.log(123);
                                     $.cookie('phone', this.inputtel.val(), { expires: 7, path: '/' });
                                     // alert(123);
-                                    window.location.href = 'http://localhost/ugoshop/src/homepage.html';
+                                    window.location.href = 'http://10.31.163.32/ugoshop/src/homepage.html';
                                 }
                             });
                         }

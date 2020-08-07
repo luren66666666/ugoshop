@@ -63,7 +63,7 @@ define([], function() {
                             if (reg.test(this.inputtle.val())) {
                                 // this.label.eq(0).hide(); //手机号验证成功
                                 $.ajax({
-                                    url: 'http://localhost/ugoshop/php/enterVe.php',
+                                    url: 'http://10.31.163.32/ugoshop/php/enterVe.php',
                                     data: {
                                         tel: this.inputtle.val()
                                     },
@@ -342,14 +342,15 @@ define([], function() {
                         if (this.tleflag && this.codeflag && this.passflag && this.passagainflag && this.noteflag && this.checkflag) {
                             // console.log(123);
                             $.ajax({
-                                url: 'http://localhost/ugoshop/php/register.php',
+                                url: 'http://10.31.163.32/ugoshop/php/register.php',
                                 data: {
                                     tel: this.inputtle.val(),
                                     password: this.inputpass.val()
                                 }
                             });
+                            $.cookie('phone', this.inputtle.val(), { expires: 7, path: '/' });
                             alert('注册成功,自动登录中');
-                            window.location.href = 'http://localhost/ugoshop/src/homepage.html';
+                            window.location.href = 'http://10.31.163.32/ugoshop/src/homepage.html';
                         };
                     });
                 }

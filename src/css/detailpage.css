@@ -286,6 +286,7 @@ nav {
     border-radius: 5px;
     right: 0px;
     z-index: 1;
+    display: none;
 }
 
 .article3 {
@@ -556,6 +557,7 @@ nav {
     background-color: red;
     border: none;
     border-radius: 5px;
+    display: none;
 }
 
 .article3 .boxglass .boxright .box4top .box4top2 {

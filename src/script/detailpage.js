@@ -9,16 +9,27 @@ define([], function() {
                     this.li = $('nav .nav0 .top-nav-tool .yg-card');
                     this.quit = $('.nav0 .quit');
                     this.tuichu = $('.nav0 .quit .quit_a');
+                    this.quit_span = $('.nav0 .quit .quit_span');
                 }
                 init() {
+                    if ($.cookie('phone')) { //判断用户是否登录，
+                        $('.xian a').show();
+                        $('.article3 .boxglass .boxright .box4top .box4_num button').show();
+                    } else {
+                        $('.xian a').hide();
+                        $('.article3 .boxglass .boxright .box4top .box4_num button').hide();
+                    };
                     this.tuichu.on('click', () => {
                         // console.log(123);
-                        $.cookie('phone', sidarr, { expires: -1, path: '/' });
-                    })
+                        $.cookie('phone', 'delete', { expires: -1, path: '/' });
+                        window.location.href = 'http://10.31.163.32/ugoshop/src/homepage.html';
+                    });
                     if ($.cookie('phone')) { //判断用户是否登录，
+                        this.quit_span.html($.cookie('phone') + '!欢迎您');
                         this.li.eq(0).hide();
                         this.li.eq(1).hide();
                         this.quit.show();
+                        // console.log($.cookie('phone'));
                     } else {
                         this.li.eq(0).show();
                         this.li.eq(1).show();
@@ -72,7 +83,7 @@ define([], function() {
                     let database = null;
                     // console.log(sid);
                     $.ajax({
-                        url: 'http://localhost/ugoshop/php/doem.php',
+                        url: 'http://10.31.163.32/ugoshop/php/doem.php',
                         dataType: 'json'
                     }).done((data) => {
                         // console.log(data.arr2);

@@ -11,9 +11,17 @@ define([], function() {
                     this.input1 = $('.article1 .box1 form .input1');
                     this.li = $('nav .nav0 .top-nav-tool .yg-card');
                     this.quit = $('.nav0 .quit');
+                    this.tuichu = $('.nav0 .quit .quit_a');
+                    this.quit_span = $('.nav0 .quit .quit_span');
                 }
                 init() {
+                    this.tuichu.on('click', () => { //退出登录
+                        // console.log(123);
+                        $.cookie('phone', 'delete', { expires: -1, path: '/' });
+                        window.location.href = 'http://10.31.163.32/ugoshop/src/homepage.html';
+                    });
                     if ($.cookie('phone')) { //判断用户是否登录，
+                        this.quit_span.html($.cookie('phone') + '!欢迎您');
                         this.li.eq(0).hide();
                         this.li.eq(1).hide();
                         this.quit.show();
@@ -63,7 +71,7 @@ define([], function() {
                 init() { //渲染
                     // console.log(123);
                     $.ajax({
-                        url: 'http://localhost/ugoshop/php/doem.php',
+                        url: 'http://10.31.163.32/ugoshop/php/doem.php',
                         dataType: 'json'
                     }).done((data) => {
                         // console.log(data.arr1);
@@ -73,7 +81,7 @@ define([], function() {
                             str += `
                             <li>
                     <a href="javascript:;">
-                        <img src="${value.url}" alt="">
+                    <img  data-original="${value.url}" class="lazy" width="200" height="200"/>
                         <p class="p1">${value.title}</p>
                         <p class="p2">${value.keyword}</p>
                         <div>
@@ -93,6 +101,9 @@ define([], function() {
                         });
                         str += '</ul>';
                         this.boxfooter.html(str);
+                        $(function() {
+                            $("img.lazy").lazyload({ effect: "fadeIn" });
+                        });
                     });
                     this.slideshow();
                 }

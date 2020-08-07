@@ -11,9 +11,17 @@ define([], function() {
                     this.input1 = $('.article1 .box1 form .input1');
                     this.li = $('nav .nav0 .top-nav-tool .yg-card');
                     this.quit = $('.nav0 .quit');
+                    this.tuichu = $('.nav0 .quit .quit_a');
+                    this.quit_span = $('.nav0 .quit .quit_span');
                 }
                 init() {
+                    this.tuichu.on('click', () => {
+                        // console.log(123);
+                        $.cookie('phone', 'delete', { expires: -1, path: '/' });
+                        window.location.href = 'http://10.31.163.32/ugoshop/src/homepage.html';
+                    });
                     if ($.cookie('phone')) { //判断用户是否登录，
+                        this.quit_span.html($.cookie('phone') + '!欢迎您');
                         this.li.eq(0).hide();
                         this.li.eq(1).hide();
                         this.quit.show();
@@ -64,7 +72,7 @@ define([], function() {
                 init() {
                     //渲染数据
                     $.ajax({
-                        url: 'http://localhost/ugoshop/php/listdata.php',
+                        url: 'http://10.31.163.32/ugoshop/php/listdata.php',
                         dataType: 'json'
                     }).done((data) => {
                         let arr = data;
@@ -73,8 +81,8 @@ define([], function() {
                         $.each(arr, function(index, value) {
                             str += `
                             <li>
-                            <a href="http://localhost/ugoshop/src/detailpage.html?sid=${value.sid}">
-                                <img src="${value.url}" alt="">
+                            <a href="http://10.31.163.32/ugoshop/src/detailpage.html?sid=${value.sid}">
+                            <img  data-original="${value.url}" class="lazy1" width="200" height="200"/>
                                 <p class="p1">${value.title}</p>
                                 <p class="p2">${value.keyword}</p>
                                 <div>
@@ -92,6 +100,9 @@ define([], function() {
                         });
                         str += '</ul>';
                         this.boxul.html(str);
+                        $(function() {
+                            $("img.lazy1").lazyload({ effect: "fadeIn" });
+                        });
                         // console.log($('section .article3 .boxul ul li').length);
                         // console.log(this.boxli.length);
                         // this.num = 10; //ajax是异步的.
@@ -110,7 +121,7 @@ define([], function() {
                         callback: (api) => {
                             // console.log(api.getCurrent());
                             $.ajax({
-                                url: 'http://localhost/ugoshop/php/listdata.php',
+                                url: 'http://10.31.163.32/ugoshop/php/listdata.php',
                                 data: {
                                     page: api.getCurrent()
                                 },
@@ -120,8 +131,8 @@ define([], function() {
                                 $.each(data, (index, value) => {
                                     str += `
                             <li>
-                            <a href="javascript:;">
-                                <img src="${value.url}" alt="">
+                            <a href="http://10.31.163.32/ugoshop/src/detailpage.html?sid=${value.sid}">
+                            <img  data-original="${value.url}" class="lazy2" width="200" height="200"/>
                                 <p class="p1">${value.title}</p>
                                 <p class="p2">${value.keyword}</p>
                                 <div>
@@ -142,6 +153,9 @@ define([], function() {
                                 // console.log(this);
                                 // console.log(this.num);
                                 this.boxul.html(str);
+                                $(function() {
+                                    $("img.lazy2").lazyload({ effect: "fadeIn" });
+                                });
                                 this.boxli = $('section .article3 .boxul ul li');
                                 this.boxoul = $('section .article3 .boxul ul');
                                 // console.log(this.boxli.eq(0).find('.span1').html().substring(1));
