@@ -147,6 +147,41 @@ nav {
     width: 964px;
     height: 37px;
     margin-top: 10px;
+    position: relative;
+}
+
+.article2 form .box0 .dui {
+    width: 16px;
+    height: 16px;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 540px;
+    top: 11px;
+    text-align: center;
+    line-height: 16px;
+    display: none;
+}
+
+.article2 form .box222 .dui,
+.article2 form .box555 .dui {
+    left: 320px;
+}
+
+.article2 form .box0 label {
+    background-color: #fff3f3;
+    border: 1px solid #ffadb0;
+    color: #eb0007;
+    width: 270px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    position: absolute;
+    left: 573px;
+    top: 0;
+    font-size: 12px;
+    display: none;
 }
 
 .article2 form span {
@@ -165,29 +200,30 @@ nav {
     /* display: block; */
     outline: none;
     width: 202px;
-    height: 33px;
+    height: 23px;
     font-size: 12px;
     line-height: 37px;
+    padding: 5px 25px 5px 10px;
 }
 
 .article2 form .input1 {
-    width: 351px;
+    width: 316px;
 }
 
 .article2 form .input2 {
-    width: 124px;
+    width: 89px;
 }
 
 .article2 form .input3 {
-    width: 351px;
+    width: 316px;
 }
 
 .article2 form .input4 {
-    width: 351px;
+    width: 316px;
 }
 
 .article2 form .input5 {
-    width: 124px;
+    width: 89px;
 }
 
 .article2 form .input6 {
@@ -204,6 +240,21 @@ nav {
 .article2 form .box555 button {
     padding: 5px;
     border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.article2 form .box555 .note {
+    position: absolute;
+    border: 1px solid black;
+    left: 460px;
+    width: 60px;
+    top: 0;
+    height: 35px;
+    /* float: left; */
+    line-height: 35px;
+    font-size: 16px;
+    display: none;
 }
 
 .article2 form .box222 {
@@ -239,6 +290,16 @@ nav {
 
 .article2 form .box666 {
     margin-top: 5px;
+    position: relative;
+}
+
+.article2 form .box666 label {
+    position: absolute;
+    left: 450px;
+    top: 0;
+    font-size: 12px;
+    color: red;
+    display: none;
 }
 
 .article2 form .box777 {

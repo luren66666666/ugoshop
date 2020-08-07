@@ -155,6 +155,20 @@ nav {
     top: 23px;
 }
 
+.article2 .boxwai form .box1 .box11 .dui {
+    width: 16px;
+    height: 16px;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    text-align: center;
+    line-height: 16px;
+    display: none;
+}
+
 .article2 .boxwai form .box1 .box11 input {
     display: block;
     /* font: 13px Arial; */

@@ -9,8 +9,20 @@ define([], function() {
                     this.a = $('.ul1 .navcat a');
                     this.box2 = $('.article2 .box1 .ul1 .box2');
                     this.input1 = $('.article1 .box1 form .input1');
+                    this.li = $('nav .nav0 .top-nav-tool .yg-card');
+                    this.quit = $('.nav0 .quit');
                 }
                 init() {
+                    if ($.cookie('phone')) { //判断用户是否登录，
+                        this.li.eq(0).hide();
+                        this.li.eq(1).hide();
+                        this.quit.show();
+                    } else {
+                        this.li.eq(0).show();
+                        this.li.eq(1).show();
+                        this.quit.hide();
+                    };
+
                     this.a.hover(() => {
                         this.box2.show();
                     }, () => {

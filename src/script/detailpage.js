@@ -6,8 +6,24 @@ define([], function() {
                     this.a = $('.ul1 .navcat a');
                     this.box2 = $('.article2 .box1 .ul1 .box2');
                     this.input1 = $('.article1 .box1 form .input1');
+                    this.li = $('nav .nav0 .top-nav-tool .yg-card');
+                    this.quit = $('.nav0 .quit');
+                    this.tuichu = $('.nav0 .quit .quit_a');
                 }
                 init() {
+                    this.tuichu.on('click', () => {
+                        // console.log(123);
+                        $.cookie('phone', sidarr, { expires: -1, path: '/' });
+                    })
+                    if ($.cookie('phone')) { //判断用户是否登录，
+                        this.li.eq(0).hide();
+                        this.li.eq(1).hide();
+                        this.quit.show();
+                    } else {
+                        this.li.eq(0).show();
+                        this.li.eq(1).show();
+                        this.quit.hide();
+                    };
                     this.a.hover(() => {
                         this.box2.show();
                     }, () => {
@@ -96,9 +112,13 @@ define([], function() {
                         width: this.spic.width() * ratio,
                         height: this.spic.height() * ratio
                     });
-                    this.spic.on('mousemove', (ev) => {
+                    this.spic.on('mouseover', () => {
                         this.sf.css('display', 'block');
                         this.bf.css('display', 'block');
+                    })
+                    this.spic.on('mousemove', (ev) => {
+                        // this.sf.css('display', 'block');
+                        // this.bf.css('display', 'block');
                         // console.log(ev.offsetX);
                         var left = ev.pageX - this.spic.offset().left;
                         var top = ev.pageY - this.spic.offset().top;
@@ -215,6 +235,7 @@ define([], function() {
                             $.cookie('sid', sidarr, { expires: 7, path: '/' });
                             $.cookie('num', numarr, { expires: 7, path: '/' });
                         }
+                        alert('添加购物车成功');
                     })
                 }
             }

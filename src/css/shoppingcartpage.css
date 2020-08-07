@@ -25,6 +25,20 @@ nav {
     margin: 0 auto;
     width: 1000px;
     height: 28px;
+    position: relative;
+}
+
+.nav0 .quit {
+    font-size: 12px;
+    position: absolute;
+    left: 350px;
+    top: 5px;
+    display: none;
+    /* height: 28px; */
+}
+
+.nav0 .quit .quit_a {
+    color: red;
 }
 
 .top-nav-tool {

@@ -4,8 +4,19 @@ define([], function() {
             class First {
                 constructor() {
                     this.input1 = $('.article1 .box1 form .input1');
+                    this.li = $('nav .nav0 .top-nav-tool .yg-card');
+                    this.quit = $('.nav0 .quit');
                 }
                 init() {
+                    if ($.cookie('phone')) { //判断用户是否登录，
+                        this.li.eq(0).hide();
+                        this.li.eq(1).hide();
+                        this.quit.show();
+                    } else {
+                        this.li.eq(0).show();
+                        this.li.eq(1).show();
+                        this.quit.hide();
+                    };
                     this.input1.on('focus', () => {
                         // console.log(123);
                         this.input1.attr('placeholder', '')
@@ -55,7 +66,7 @@ define([], function() {
                                         // console.log(123);
                                         // console.log(value1);
                                         str = `
-                                        <div class="box0">
+                                        <div class="box0" index=${value2.sid}>
                                         <span class="spanleft">商家直销</span>
                                         <span class="spanright">免运费</span>
                                         <div class="box1">
@@ -100,7 +111,7 @@ define([], function() {
                     let totalprice = 0; //总价
                     let index = 0;
                     // console.log(this.deleteone.length);
-                    this.deleteone.on('click', function() {
+                    this.deleteone.on('click', function() { //点击删除商品
                         //点击删除后,要重新获取+和-的元素对象
                         this.lefta = $('.article3 .box0 .box1 .left a');
                         this.righta = $('.article3 .box0 .box1 .right a');
@@ -143,34 +154,94 @@ define([], function() {
                             });
                             // console.log(amount, totalprice);
                             this_span3.html(amount);
-                            this_span5.html(totalprice);
+                            this_span5.html('￥' + totalprice);
                         }
                         // console.log(this_data);
                     });
                     // console.log(this.lefta.length);
-                    this.lefta.on('click', function() {
+                    this.lefta.on('click', function() { //点击减少购买数量
                         // console.log($(this).index('.lefta'));
                         //点击之前对应的数量
-                        var str1 = $('.article3 .box0 .box1 .center').eq($(this).index('.lefta')).html();
+                        var index = $(this).index('.lefta');
+                        var str1 = $('.article3 .box0 .box1 .center').eq(index).html();
                         str1 = Number(str1) - 1;
                         if (str1 <= 1) {
                             str1 = 1;
                         }
+                        //商品价格
+                        var price = $('.article3 .box0 .box1 .span1').eq(index).html().substring(1);
+                        console.log(price);
                         //点击之后对应的数量
-                        $('.article3 .box0 .box1 .center').eq($(this).index('.lefta')).html(str1);
+                        $('.article3 .box0 .box1 .center').eq(index).html(str1);
+                        //点击后对应的小计
+                        $('.article3 .box0 .box1 .span2').eq(index).html('￥' + (str1 * price));
                         sidarr = $.cookie('sid').split(',');
                         numarr = $.cookie('num').split(',');
                         // console.log($('.article3 .box0 .box1 .span1').eq($(this).index('.lefta')).html().substring(1));
-                        var price = $('.article3 .box0 .box1 .span1').eq($(this).index('.lefta')).html().substring(1);
-                        //通过价格与接口数据做比较，获取对应的sid
-
+                        var sidcookie = $('.article3 .box0').eq(index).attr('index');
+                        $.each(sidarr, (index, value) => { //将改变的数量存入数量的数组中
+                            if (value === sidcookie) {
+                                numarr[index] = str1;
+                            };
+                        });
+                        //存入cookie 
+                        amount = 0;
+                        totalprice = 0;
+                        $.each(sidarr, (index1, value1) => {
+                            $.each(this_data, (index2, value2) => {
+                                if (Number(value1) === Number(value2.sid)) {
+                                    // console.log(456);
+                                    totalprice += value2.nowprice * numarr[index1];
+                                    amount += Number(numarr[index1]);
+                                }
+                            })
+                        });
+                        // console.log(amount, totalprice);
+                        this_span3.html(amount);
+                        this_span5.html('￥' + totalprice);
                         $.cookie('sid', sidarr, { expires: 7, path: '/' });
                         $.cookie('num', numarr, { expires: 7, path: '/' });
                     });
-                    this.righta.on('click', function() {
-                        var str2 = $('.article3 .box0 .box1 .center').eq($(this).index('.righta')).html();
-                        str2 = Number(str2) + 1;
-                        $('.article3 .box0 .box1 .center').eq($(this).index('.righta')).html(str2);
+                    this.righta.on('click', function() { //点击增加购买数量
+                        var index = $(this).index('.righta');
+                        var str1 = $('.article3 .box0 .box1 .center').eq(index).html();
+                        str1 = Number(str1) + 1;
+                        if (str1 <= 1) {
+                            str1 = 1;
+                        }
+                        //商品价格
+                        var price = $('.article3 .box0 .box1 .span1').eq(index).html().substring(1);
+                        console.log(price);
+                        //点击之后对应的数量
+                        $('.article3 .box0 .box1 .center').eq(index).html(str1);
+                        //点击后对应的小计
+                        $('.article3 .box0 .box1 .span2').eq(index).html('￥' + (str1 * price));
+                        sidarr = $.cookie('sid').split(',');
+                        numarr = $.cookie('num').split(',');
+                        // console.log($('.article3 .box0 .box1 .span1').eq($(this).index('.lefta')).html().substring(1));
+                        var sidcookie = $('.article3 .box0').eq(index).attr('index');
+                        $.each(sidarr, (index, value) => { //将改变的数量存入数量的数组中
+                            if (value === sidcookie) {
+                                numarr[index] = str1;
+                            };
+                        });
+                        //存入cookie    
+                        amount = 0;
+                        totalprice = 0;
+                        $.each(sidarr, (index1, value1) => {
+                            $.each(this_data, (index2, value2) => {
+                                if (Number(value1) === Number(value2.sid)) {
+                                    // console.log(456);
+                                    totalprice += value2.nowprice * numarr[index1];
+                                    amount += Number(numarr[index1]);
+                                }
+                            })
+                        });
+                        // console.log(amount, totalprice);
+                        this_span3.html(amount);
+                        this_span5.html('￥' + totalprice);
+                        $.cookie('sid', sidarr, { expires: 7, path: '/' });
+                        $.cookie('num', numarr, { expires: 7, path: '/' });
                     });
                 }
             }
